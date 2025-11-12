@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petcare - Cadastro</title>
+  <link rel="stylesheet" href="cadastro.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logonova.png" alt="Logo Petcare">
+      <h1 class="nome">Petcare</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="menuprincipal.html">Início</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="areavet.html">Área Veterinária</a></li>
+        <li><a href="cadastro.html">Criar Conta</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="background"></div>
+  <main class="container">
+    <div class="card">
+      <div class="left">
+        <h2>Olá! Seja bem-vindo ao Petcare!</h2>
+        <img src="assets/fotodocao.png  " alt="Cachorro feliz">
+      </div>
+      <div class="right">
+        <form>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" placeholder="000.000.000-00" required>
+
+          <label for="telefone">Número de telefone</label>
+          <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" placeholder="00000-000" required>
+
+          <label class="terms">
+            <input type="checkbox" required>
+            Li e concordo com os <a href="#">termos de serviço</a> e <a href="#">política de privacidade</a>.
+          </label>
+
+          <button type="submit" class="btn"><a class="continuar" href="cadastropet.html">Continuar</a></button>
+
+          <div class="google">
+            <img src="/assets/goog.png" alt="Google">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

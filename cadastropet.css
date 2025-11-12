@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1556228578-ef7c7c65d0c1?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #0E2D3F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.logo .nome {
+    color: #00a5c0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+header a:hover {
+    color: #007bff;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #0E2D3F;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+
+.left {
+    text-align: center;
+    flex: 1;
+}
+
+.left h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.left img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 40px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group p,
+.form-group label {
+    font-weight: 500;
+    color: white;
+}
+
+.opcoes {
+    display: flex;
+    gap: 20px;
+}
+
+
+input[type="radio"] {
+    appearance: none;
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #00a5c0;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked {
+    background-color: #00a5c0;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 3px;
+    left: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 25px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.botoes button {
+    border: none;
+    background: #00a5c0;
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.botoes button:hover {
+    background: #00a5c0;
+}
+
+.continuar {
+    align-self: center;
+    margin-top: 10px;
+    background: #00a5c0;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.continuar:hover {
+    background: #0056d8;
+}

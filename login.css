@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E2D3F;
+    padding: 15px 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo .nome {
+    color: #00a5c0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+    color: white;
+}
+
+nav a:hover {
+    color: #00a5c0;
+}
+
+
+.login-section {
+    background: url('fundo-login.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    display: flex;
+    background-color:#0E2D3F;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    backdrop-filter: blur(8px);
+    max-width: 700px;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: -7rem;
+}
+
+
+.left {
+    text-align: center;
+    margin-right: 40px;
+}
+
+.left p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Kavoon';
+    
+}
+
+.left img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00a5c0;
+}
+
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 220px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #00a5c0;
+    box-shadow: 0 0 5px rgba(0, 165, 192, 0.5);
+}
+
+button {
+    width: 220px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.link {
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #00a5c0;
+}
+
+
+.google-login {
+    margin-top: 15px;
+}
+
+.google-login img {
+    width: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-login img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 700px) {
+    .login-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

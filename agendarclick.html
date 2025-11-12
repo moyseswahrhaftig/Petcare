@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petcare - Agendar Consulta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="agendarclick.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="" alt="Petcare logo">
+      <h1>Petcare</h1>
+    </div>
+    <nav>
+      <a href="menuprincipal.html">Início</a>
+      <a href="social.html">Social</a>
+      <a href="planos.html">Planos</a>
+      <a href="areavet.html">Área veterinária</a>
+      <a href="cadastro.html">Criar Conta</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <div class="perfil">
+        <img src="/assets/golden.svg" alt="Foto do pet">
+        <h2>Seu pet</h2>
+      </div>
+      <ul>
+        <li><a href="calendario.html">Calendário de vacinas</a></li>
+        <li><a href="historico.html">Histórico médico</a></li>
+        <li><a href="consultas.html">Consultas</a></li>
+      </ul>
+    </aside>
+
+    <section class="conteudo">
+      <div class="imagem-fundo">
+        <img src="/assets/vet.png" alt="Veterinário cuidando do cachorro">
+      </div>
+
+      <div class="agendar-card">
+        <h3>Agendar consulta</h3>
+        <p>(Consulta selecionada na última tela)</p>
+        <label for="horario">escolha o horário desejado</label>
+        <select id="horario">
+          <option selected disabled>selecione o horário desejado</option>
+          <option>09:00</option>
+          <option>10:30</option>
+          <option>14:00</option>
+          <option>15:30</option>
+          <option>17:00</option>
+        </select>
+        <button class="btn-confirmar"><a href="finalizaragendamento.html">Confirmar</a></button>
+      </div>
+
+      <div class="card-premium">
+        <h3>Pet premium</h3>
+        <ul>
+          <li>Consultas ilimitadas</li>
+          <li>Descontos em exames</li>
+          <li>Teleatendimento 24h</li>
+          <li>Nutricionista para pet</li>
+        </ul>
+        <p class="preco">R$ 49,90/mês</p>
+        <button class="btn-assinar">Assinar</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
